@@ -65,7 +65,7 @@ body {
 .movie-header {
     text-align: center;
     padding: 60px 0;
-    background: url(' ../images/roll.png' );
+    background: url('images/roll.png' );
     background-size: 100% 200%;
     background-position: center;
     background-repeat: no-repeat;
