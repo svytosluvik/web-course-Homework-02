@@ -1,17 +1,16 @@
 /* === ПЕРЕМЕННЫЕ И БАЗОВЫЕ НАСТРОЙКИ === */
 :root {
-    /* Цветовая схема в стиле Матрицы */
-    --blue: #0004ff;
-    --matrix-dark-green: #008f11;
-    --matrix-bg: #8f5f5f;
-    --matrix-bg-light: #1a1a1a;
-    --text-primary: #00ff41;
-    --text-secondary: #682e2e;
+    /* Цветовая схема в пиратском стиле */
+    --pirate-brown: #5e2f0d;
+    --pirate-dark-brown: #8B4513;
+    --pirate-gold: #DAA520;
+    --pirate-light-gold: #FFD700;
+    --pirate-parchment: #F5DEB3;
+    --pirate-light-parchment: #DEB887;
+    --pirate-shadow: rgba(139, 69, 19, 0.5);
+    --text-dark: #5e2f0d;
+    --text-light: #654321;
     --text-muted: #888888;
-    --accent: #ff0040;
-    --border-color: #fffb0033;
-    --shadowpirate: rgba(139, 69, 19, 0.5);
-    --pirate: #5e2f0d; 
 }
 
 /* Сброс стандартных стилей */
@@ -23,18 +22,18 @@
 
 /* Основные стили body */
 body {
-       
-    background-color: var(--matrix-bg);
-    color: var(--text-secondary);
+    font-family: 'Courier New', monospace;
+    background-color: var(--pirate-brown);
+    color: var(--text-light);
     line-height: 1.6;
     min-height: 100vh;
     
-    /* картинка стола, как же я горю, это вставить заняло два часа*/
-    background-image:url('https://yandex-images.clstorage.net/uhs5W2155/53ce78dh/6z6Ak_gxsxLaJ5eOmdAnIXzykenje1KiVfDbbiWUBi1PFQOlJw5SVrb33qMUbcsCkQpm6rZeLaesnHAmDVQXQE4a5dfdJeb2qifGyil05oG988UoN0oGg8Wwrv7lgqX_CAIFYvR5gEFBg2vWYS3_phVesClXeHhW3YuHUM00A0dar_Ax-3KAh6m2VOjL4OaxbGNniIB6NDPS0qi5IBIU3YiRZcDVGpLSsgGrleH9XJA0T8O6Iyp6FC3ZlJOuB4Lme6-xEFhQEjaq1RRbKUEVMbwRtBnR-VZBkRMJyqIxN11ZgabRFTuAUZNCyMTRPd1xpD3Q2DG7m4X96EQBrZfgxrpckyL6oKEkyldk2qkAd5KvIHe6MCjEQ7BR6HhwAcS-iWJX8TYKYWFCc7lHAi-cwdSO8zqwSmnGLhmlsS3msdf5byDwGoAhtuq0ppjJ4UaCHSGkKXGo5oDRQtlLYtMlTykSN5OGyZCT8SNpJLDNbNPFDMLbAGs7Vpw5FNG8l-Mn281goMlQ8YbIZ-UYKGMV4X7TxmvTmuYj03BYWJMTNL97Q0fwJmixAlAwWuSRv_0Ql-_DKbG4qLWfqCWADaaBR9mNkuGKEwK2WYW3GskxdUEuAJdL8Qh286Jye0kBozd_uDBmEiR50IOy88nmk-ztIfZsgNhiCbhn7psWM10k4tQKHbIS6MLDNLq1V4i7A5cxroHnubOotQCjIrt4oqJFXktQZ5FFiSJQ8cDaRSP8_IPGDdJ6UHpYVP-LhYO8FUKkuU0jwjow0Ud5hIaZOOLE843jhjmDerdx4XDZ2FBDxBw5Q4ZDRDozoUGyi5TSLR7RVD6CurGZuGWf-aVDv8aytpgOQuIoclBkieVUyhnCpNH_0rapIYt0wUORGDuh8XTeSzIE4xTIkOJzMGjWASyO0DT8sEoAacpnbPpEkmwGkJaYP7GhO7LiZSgnpIsIE3dTDhCUWSJZZOBjInh5QCA2E');
+    /* картинка стола */
+    background-image: url('https://yandex-images.clstorage.net/uhs5W2155/53ce78dh/6z6Ak_gxsxLaJ5eOmdAnIXzykenje1KiVfDbbiWUBi1PFQOlJw5SVrb33qMUbcsCkQpm6rZeLaesnHAmDVQXQE4a5dfdJeb2qifGyil05oG988UoN0oGg8Wwrv7lgqX_CAIFYvR5gEFBg2vWYS3_phVesClXeHhW3YuHUM00A0dar_Ax-3KAh6m2VOjL4OaxbGNniIB6NDPS0qi5IBIU3YiRZcDVGpLSsgGrleH9XJA0T8O6Iyp6FC3ZlJOuB4Lme6-xEFhQEjaq1RRbKUEVMbwRtBnR-VZBkRMJyqIxN11ZgabRFTuAUZNCyMTRPd1xpD3Q2DG7m4X96EQBrZfgxrpckyL6oKEkyldk2qkAd5KvIHe6MCjEQ7BR6HhwAcS-iWJX8TYKYWFCc7lHAi-cwdSO8zqwSmnGLhmlsS3msdf5byDwGoAhtuq0ppjJ4UaCHSGkKXGo5oDRQtlLYtMlTykSN5OGyZCT8SNpJLDNbNPFDMLbAGs7Vpw5FNG8l-Mn281goMlQ8YbIZ-UYKGMV4X7TxmvTmuYj03BYWJMTNL97Q0fwJmixAlAwWuSRv_0Ql-_DKbG4qLWfqCWADaaBR9mNkuGKEwK2WYW3GskxdUEuAJdL8Qh286Jye0kBozd_uDBmEiR50IOy88nmk-ztIfZsgNhiCbhn7psWM10k4tQKHbIS6MLDNLq1V4i7A5cxroHnubOotQCjIrt4oqJFXktQZ5FFiSJQ8cDaRSP8_IPGDdJ6UHpYVP-LhYO8FUKkuU0jwjow0Ud5hIaZOOLE843jhjmDerdx4XDZ2FBDxBw5Q4ZDRDozoUGyi5TSLR7RVD6CurGZuGWf-aVDv8aytpgOQuIoclBkieVUyhnCpNH_0rapIYt0wUORGDuh8XTeSzIE4xTIkOJzMGjWASyO0DT8sEoAacpnbPpEkmwGkJaYP7GhO7LiZSgnpIsIE3dTDhCUWSJZZOBjInh5QCA2E');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 /* Контейнер */
@@ -42,76 +41,97 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    
 }
 
-/* Эффект свечения для текста */
-@keyframes glow {
-    0%, 100% {
-        text-shadow: 
-            0 0 5px var(--blue),
-            0 0 10px var(--blue),
-            0 0 15px var(--matrix-dark-green);
-    }
-    50% {
-        text-shadow: 
-            0 0 10px var(--blue),
-            0 0 20px var(--blue),
-            0 0 30px var(--matrix-dark-green);
-    }
+/* === ОБЩИЕ СТИЛИ СЕКЦИЙ === */
+.content-section, .movie-header, .actors-list, .reasons-list, .poster-container, .links-container {
+    position: relative;
+    padding: 60px 20px;
+    margin: 30px 0;
+    background: rgba(245, 222, 179, 0.85); /* Полупрозрачный пергамент */
+    border: 3px solid var(--pirate-dark-brown);
+    border-radius: 15px 5px 15px 5px;
+    box-shadow: 5px 5px 15px var(--pirate-shadow);
+    z-index: 1;
+}
+
+/* Псевдоэлемент для создания эффекта старой бумаги */
+.content-section::before, .movie-header::before, .actors-list::before, 
+.reasons-list::before, .poster-container::before, .links-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(139, 69, 19, 0.1) 0%, transparent 20%),
+        linear-gradient(135deg, transparent 0%, rgba(245, 222, 179, 0.3) 50%, transparent 100%);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Заголовки секций */
+.content-section h2, .movie-header h1, .actors-list h2, .reasons-list h2 {
+    color: var(--pirate-brown);
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    padding: 0 15px 10px;
+    border-bottom: 3px solid var(--pirate-dark-brown);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Декоративный элемент для заголовков */
+.content-section h2::after, .movie-header h1::after, .actors-list h2::after, .reasons-list h2::after {
+    content: '☠';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: var(--pirate-dark-brown);
 }
 
 /* === ШАПКА САЙТА === */
 .movie-header {
     text-align: center;
-    padding: 60px 0;
-    background: url('images/roll.png' );
-    background-size: 100% 200%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    position: relative;
-    
+    padding: 80px 20px;
 }
 
-
-/* Заголовок */
 .movie-header h1 {
-    font-size: 2em;
-    color: var(--pirate); 
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
+    font-size: 2.5em;
+    margin-bottom: 30px;
     text-shadow: 
-        2px 2px 0px var(--text-secondary),
-        4px 4px 0px var(--shadowpirate);
-    font-family:  'Playfair Display', serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
+        3px 3px 0px var(--text-light),
+        5px 5px 0px var(--pirate-shadow);
+    font-family: 'Playfair Display', serif;
 }
 
-/* Навигация  */
+/* Навигация */
 .main-nav {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     position: relative;
     z-index: 1;
     padding: 20px;
-    background: 
-        radial-gradient(circle, rgba(139, 69, 19, 0.1) 0%, transparent 70%);
 }
 
 .main-nav a {
-    color: #8B4513; 
+    color: var(--pirate-dark-brown);
     text-decoration: none;
     padding: 12px 25px;
-    border: 2px solid #8B4513;
+    border: 2px solid var(--pirate-dark-brown);
     border-radius: 25px;
-    background: linear-gradient(135deg, #F5DEB3, #DEB887); 
+    background: linear-gradient(135deg, var(--pirate-parchment), var(--pirate-light-parchment));
     transition: all 0.3s ease;
     font-weight: bold;
     text-transform: uppercase;
@@ -143,396 +163,184 @@ body {
 }
 
 .main-nav a:hover {
-    background: linear-gradient(135deg, #DEB887, #CD853F);
+    background: linear-gradient(135deg, var(--pirate-light-parchment), #CD853F);
     color: #000;
     transform: translateY(-3px) rotate(1deg);
     box-shadow: 
         0 5px 15px rgba(0, 0, 0, 0.4),
         inset 0 0 10px rgba(255, 215, 0, 0.3);
-    border-color: #DAA520; 
+    border-color: var(--pirate-gold);
 }
 
-
-/* === СЕКЦИИ КОНТЕНТА === */
-.content-section {
-    text-align: center;
-    padding: 60px 0;
-    background: url(' ../images/roll.png' );
-    background-size: 100% 200%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    position: relative;
-}
-
-
-.content-section::after {
-    content: '☠';
-    
-    top: 15px;
-    left: 15px;
-    color: var(--text-secondary);
-    font-size: 1.5em;
-}
-
-.content-section h2 {
-    color: var(--pirate); 
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 4px solid #8b4513;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-}
-
-
-/* Сетка информации в стиле морской карты */
+/* === СЕТКА ИНФОРМАЦИИ === */
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .info-item {
-    padding: 20px;
-    background: rgba(245, 222, 179, 0.7); /* Полупрозрачный пергамент */
-    border: 2px solid #8b4513;
-    border-radius: 8px 2px 8px 2px; /* Неровные углы */
-    transition: all 0.3s ease;
+    padding: 25px 20px;
+    background: rgba(245, 222, 179, 0.9);
+    border: 2px solid var(--pirate-dark-brown);
+    border-radius: 10px 3px 10px 3px;
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     font-style: italic;
 }
 
-/* Эффект волн при наведении */
 .info-item:hover {
     transform: translateY(-5px) rotate(1deg);
-    border-color: #daa520; /* Золотой */
+    border-color: var(--pirate-gold);
     box-shadow: 
         5px 5px 20px rgba(0, 0, 0, 0.3),
         inset 0 0 15px rgba(218, 165, 32, 0.2);
-    background: rgba(245, 222, 179, 0.9);
+    background: rgba(245, 222, 179, 0.95);
 }
 
-/* Анимация плавания по волнам */
-@keyframes ship-sway {
-    0%, 100% { 
-        transform: translateX(0px) rotate(0.5deg); 
-    }
-    50% { 
-        transform: translateX(3px) rotate(-0.5deg); 
-    }
+/* === СПИСОК АКТЕРОВ === */
+.actors-list ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.content-section:hover {
-    animation: ship-sway 3s ease-in-out;
-}
-
-/* === СПИСОК АКТЕРОВ В ПИРАТСКОМ СТИЛЕ === */
-.actors-list {
-    text-align: center;
-    padding: 60px 0;
-    background: url(' ../images/roll.png' );
-    background-size: 100% 200%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+.actors-list li {
+    padding: 15px 20px 15px 50px;
+    margin: 10px 0;
+    background: rgba(245, 222, 179, 0.8);
+    border: 2px solid var(--pirate-dark-brown);
+    border-radius: 8px 2px 8px 2px;
+    transition: all 0.3s ease;
     position: relative;
 }
 
 .actors-list li::before {
-    content: '⚓'; 
-    color: #ffffff;
-    margin-right: 12px;
-    font-size: 1.1em;
-    display: inline-block;
-    transition: transform 0.3s ease;
+    content: '⚓';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--pirate-dark-brown);
+    font-size: 1.3em;
+    transition: all 0.3s ease;
 }
 
-/* Эффект волны при наведении */
 .actors-list li:hover {
-        transform: translateX(8px) rotate(0.5deg);
-    }
+    transform: translateX(8px);
+    border-color: var(--pirate-gold);
+    background: rgba(245, 222, 179, 0.95);
+}
 
-/* Анимация якоря при наведении */
 .actors-list li:hover::before {
-    transform: rotate(15deg) scale(1.2);
-    color: #daa520;
+    transform: translateY(-50%) rotate(15deg) scale(1.2);
+    color: var(--pirate-gold);
 }
 
 .actor-name {
-    color: #5e2f0d; /* Темное дерево */
+    color: var(--text-dark);
     font-weight: bold;
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    position: relative;
-    display: inline-block;
 }
 
-/* Эффект выжженной надписи для имен */
-.actor-name::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: #8b4513;
-    transition: width 0.3s ease;
-}
-
-.actors-list li:hover .actor-name::after {
-    width: 100%;
-}
-
-/* Роль актера - курсивом как на старых картах */
 .actor-role {
-    color: #654321;
+    color: var(--text-light);
     font-style: italic;
     margin-left: 10px;
     font-size: 0.95em;
-    display: inline-block;
 }
 
-.actors-list li:hover::after {
-    opacity: 1;
-    background: #daa520;
-    transform: translateY(-50%) scale(1.5);
-}
-
-
-/* === НУМЕРОВАННЫЙ СПИСОК В ПИРАТСКОМ СТИЛЕ === */
-.reasons-list {
-    text-align: center;
-    padding: 60px 0;
-    background: url(' ../images/roll.png' );
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    position: relative;
-}
-
-.content-section h2 {
-    color: var(--pirate); 
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 4px solid #8b4513;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
+/* === НУМЕРОВАННЫЙ СПИСОК === */
+.reasons-list ol {
+    list-style: none;
+    counter-reset: reason-counter;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .reasons-list li {
     counter-increment: reason-counter;
-    padding: 20px 20px 20px 70px;
-    margin-bottom: 15px;
-    background: linear-gradient(135deg, #f5deb3, #e6ccad); /* Пергамент */
-    border: 2px solid #8b4513;
-    border-radius: 8px 2px 8px 2px; /* Неровные углы */
+    padding: 25px 25px 25px 80px;
+    margin: 15px 0;
+    background: linear-gradient(135deg, var(--pirate-parchment), #e6ccad);
+    border: 2px solid var(--pirate-dark-brown);
+    border-radius: 10px 3px 10px 3px;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Times New Roman', serif;
-    border-left: 5px solid #8b4513; /* Акцентная полоса */
+    border-left: 5px solid var(--pirate-dark-brown);
 }
 
-/* Пиратская нумерация - римские цифры */
 .reasons-list li::before {
     content: counter(reason-counter, upper-roman) '.';
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #5e2f0d;
+    color: var(--text-dark);
     font-size: 1.8em;
     font-weight: bold;
-    font-family: 'Times New Roman', serif;
-    background: #deb887;
-    width: 40px;
-    height: 40px;
+    background: var(--pirate-light-parchment);
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #8b4513;
+    border: 2px solid var(--pirate-dark-brown);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
-/* Эффект сундука с сокровищами при наведении */
 .reasons-list li:hover {
-    background: linear-gradient(135deg, #deb887, #cd853f);
-    border-color: #daa520; /* Золотой */
-    transform: translateX(8px) rotate(0.5deg);
+    background: linear-gradient(135deg, var(--pirate-light-parchment), #cd853f);
+    border-color: var(--pirate-gold);
+    transform: translateX(8px);
     box-shadow: 
         5px 5px 15px rgba(0, 0, 0, 0.3),
         inset 0 0 20px rgba(218, 165, 32, 0.2);
 }
 
-/* Анимация номера как монеты при наведении */
 .reasons-list li:hover::before {
-    background: #daa520; /* Золотой */
-    color: #5e2f0d;
+    background: var(--pirate-gold);
+    color: var(--text-dark);
     transform: translateY(-50%) scale(1.1) rotate(10deg);
     box-shadow: 
         0 0 10px rgba(218, 165, 32, 0.5),
         inset 0 0 5px rgba(255, 215, 0, 0.3);
-    border-color: #ffd700;
+    border-color: var(--pirate-light-gold);
 }
-
-/* Декоративный элемент  */
-.reasons-list li::after {
-    content: '🏴‍☠️';
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #8b4513;
-    font-size: 1.2em;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-
-.reasons-list li:hover::after {
-    color: #daa520;
-    opacity: 1;
-    transform: translateY(-50%) rotate(90deg);
-}
-
-/* Эффект водяных знаков для текста */
-.reasons-list li span {
-    position: relative;
-    display: block;
-    color: #5e2f0d;
-    font-size: 1.1em;
-    line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Анимация появления элементов */
-@keyframes treasure-appear {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px) rotate(-5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) rotate(0);
-    }
-}
-
-.reasons-list li {
-    animation: treasure-appear 0.6s ease-out;
-    
-}
-
-.reasons-list li:nth-child(1) { animation-delay: 0.1s; }
-.reasons-list li:nth-child(2) { animation-delay: 0.2s; }
-.reasons-list li:nth-child(3) { animation-delay: 0.3s; }
-.reasons-list li:nth-child(4) { animation-delay: 0.4s; }
-.reasons-list li:nth-child(5) { animation-delay: 0.5s; }
-
-
-/* === ПОСТЕР === */
-.poster-container {
-    text-align: center;
-    padding: 60px 0;
-    background: url(' ../images/roll.png' );
-    background-size: 50% 250%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    position: relative;
-}
-
-.movie-poster:hover::before {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-}
-
-/* Эффект морского бриза для контейнера */
-@keyframes ocean-breeze {
-    0%, 100% { 
-        transform: translateY(0px) rotate(0deg); 
-    }
-    25% { 
-        transform: translateY(-2px) rotate(0.1deg); 
-    }
-    75% { 
-        transform: translateY(2px) rotate(-0.1deg); 
-    }
-}
-
-.poster-container:hover {
-    animation: ocean-breeze 3s ease-in-out infinite;
-}
-
 
 /* === ССЫЛКИ === */
-
 .links-container {
     text-align: center;
-    padding: 60px 0;
-    background: url(' ../images/roll.png' );
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    position: relative;
-}
-
-/* Эффект штурвала на фоне */
-.links-container::before {
-    content: '⚓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4em;
-    color: rgba(139, 69, 19, 0.1);
-    z-index: 0;
-    pointer-events: none;
 }
 
 .external-link {
-    position: relative;
     display: inline-block;
+    margin: 10px 15px;
     padding: 16px 35px;
-    background: linear-gradient(135deg, #f5deb3, #deb887); /* Пергамент */
-    color: #5e2f0d; /* Цвет темного дерева */
+    background: linear-gradient(135deg, var(--pirate-parchment), var(--pirate-light-parchment));
+    color: var(--text-dark);
     text-decoration: none;
-    border: 3px solid #8b4513; /* Деревянная рамка */
-    border-radius: 25px 8px 25px 8px; /* Неровные углы */
+    border: 3px solid var(--pirate-dark-brown);
+    border-radius: 25px 8px 25px 8px;
     overflow: hidden;
     transition: all 0.4s ease;
-    font-family: 'Times New Roman', serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 
         4px 4px 12px rgba(0, 0, 0, 0.3),
         inset 2px 2px 5px rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-/* Эффект морской волны при наведении */
 .external-link::before {
     content: '';
     position: absolute;
@@ -542,7 +350,7 @@ body {
     height: 100%;
     background: linear-gradient(90deg, 
         transparent, 
-        rgba(218, 165, 32, 0.3), /* Золотой */
+        rgba(218, 165, 32, 0.3),
         transparent);
     transition: left 0.6s ease;
     z-index: -1;
@@ -552,11 +360,10 @@ body {
     left: 100%;
 }
 
-/* Основной эффект при наведении - сундук с сокровищами */
 .external-link:hover {
-    background: linear-gradient(135deg, #deb887, #cd853f); /* Темнее */
+    background: linear-gradient(135deg, var(--pirate-light-parchment), #cd853f);
     color: #000;
-    border-color: #daa520; /* Золотой */
+    border-color: var(--pirate-gold);
     transform: translateY(-5px) rotate(1deg) scale(1.05);
     box-shadow: 
         6px 6px 20px rgba(0, 0, 0, 0.4),
@@ -564,83 +371,16 @@ body {
         inset 0 0 15px rgba(255, 215, 0, 0.2);
 }
 
-/* Эффект якоря на кнопках */
-.external-link::after {
-    content: '⚓';
-    position: absolute;
-    right: -10px;
-    top: -8px;
-    font-size: 0.9em;
-    opacity: 0;
-    transform: scale(0.5) rotate(-45deg);
-    transition: all 0.4s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.external-link:hover::after {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-    right: 10px;
-}
-
-/* Эффект качания на волнах для всех ссылок */
-.links-container:hover .external-link {
-    animation: gentle-rock 2s ease-in-out infinite;
-}
-
-@keyframes gentle-rock {
-    0%, 100% { 
-        transform: translateY(0) rotate(0); 
-    }
-    25% { 
-        transform: translateY(-2px) rotate(0.3deg); 
-    }
-    75% { 
-        transform: translateY(2px) rotate(-0.3deg); 
-    }
-}
-
-/* Индивидуальные задержки для анимации */
-.external-link:nth-child(1) { animation-delay: 0s; }
-.external-link:nth-child(2) { animation-delay: 0.2s; }
-.external-link:nth-child(3) { animation-delay: 0.4s; }
-.external-link:nth-child(4) { animation-delay: 0.6s; }
-
-/* Эффект монетки для иконок ссылок */
-.external-link .link-icon {
-    display: inline-block;
-    margin-right: 8px;
-    transition: transform 0.3s ease;
-}
-
-.external-link:hover .link-icon {
-    transform: rotate(15deg) scale(1.2);
-}
-
 /* === ФУТЕР === */
 .site-footer {
     margin-top: 50px;
     padding: 30px;
     text-align: center;
-    border-top: 1px solid var(--border-color);
-    background: linear-gradient(
-        180deg,
-        transparent 0%,
-        rgba(0, 255, 65, 0.05) 100%
-    );
+    border-top: 2px solid var(--pirate-dark-brown);
+    background: rgba(245, 222, 179, 0.8);
+    border-radius: 10px 10px 0 0;
 }
 
-.site-footer::before {
-    content: '⚓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4em;
-    color: rgba(139, 69, 19, 0.1);
-    z-index: 0;
-    pointer-events: none;
-}
 .site-footer p {
     color: var(--text-muted);
     font-size: 0.9em;
@@ -664,5 +404,16 @@ body {
     
     .info-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .content-section, .movie-header, .actors-list, .reasons-list, .poster-container, .links-container {
+        padding: 40px 15px;
+        margin: 20px 0;
+    }
+    
+    .external-link {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
     }
 }
