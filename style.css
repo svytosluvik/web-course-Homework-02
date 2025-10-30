@@ -23,7 +23,7 @@
 
 /* Основные стили body */
 body {
-       font-family: 'Courier New', monospace;
+       
     background-color: var(--matrix-bg);
     color: var(--text-secondary);
     line-height: 1.6;
@@ -168,7 +168,7 @@ body {
 
 .content-section::after {
     content: '☠';
-    position: absolute;
+    
     top: 15px;
     left: 15px;
     color: var(--text-secondary);
@@ -247,21 +247,6 @@ body {
     
     position: relative;
 }
-
-.content-section h2 {
-    color: var(--pirate); 
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 4px solid #8b4513;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    position: relative;
-   
-}
-
 
 .actors-list li::before {
     content: '⚓'; 
@@ -410,7 +395,7 @@ body {
     border-color: #ffd700;
 }
 
-/* Декоративный элемент - компас */
+/* Декоративный элемент  */
 .reasons-list li::after {
     content: '🏴‍☠️';
     position: absolute;
@@ -681,72 +666,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-/* === ЭФФЕКТ ГЛИТЧА === */
-@keyframes glitch {
-    0% {
-        text-shadow: 
-            0.05em 0 0 var(--accent), 
-            -0.05em -0.025em 0 var(--blue),
-            0.025em 0.05em 0 var(--matrix-dark-green);
-    }
-    20% {
-        text-shadow: 
-            -0.05em -0.025em 0 var(--accent), 
-            0.025em 0.025em 0 var(--blue),
-            -0.05em -0.05em 0 var(--matrix-dark-green);
-    }
-    30% {
-        text-shadow: 
-            -0.1em -0.050em 0 var(--accent), 
-            0.05em 0.05em 0 var(--blue),
-            -0.1em -0.1em 0 var(--matrix-dark-green);
-    }
-    40% {
-        text-shadow: 
-            -0.15em -0.075em 0 var(--accent), 
-            0.075em 0.075em 0 var(--blue),
-            -0.15em -0.15em 0 var(--matrix-dark-green);
-    }
-    50% {
-        text-shadow: 
-            -0.2em -0.1em 0 var(--accent), 
-            0.1em 0.1em 0 var(--blue),
-            -0.2em -0.2em 0 var(--matrix-dark-green);
-    }
-    60% {
-        text-shadow: 
-            -0.2em -0.1em 0 var(--accent), 
-            0.1em 0.1em 0 var(--blue),
-            -0.1em -0.2em 0 var(--matrix-dark-green);
-    }
-    70% {
-        text-shadow: 
-            -0.15em -0.075em 0 var(--accent), 
-            0.075em 0.075em 0 var(--blue),
-            -0.15em -0.15em 0 var(--matrix-dark-green);
-    }
-    80% {
-        text-shadow: 
-            -0.1em -0.050em 0 var(--accent), 
-            0.05em 0.05em 0 var(--blue),
-            -0.1em -0.1em 0 var(--matrix-dark-green);
-    }
-    90% {
-        text-shadow: 
-            -0.05em -0.025em 0 var(--accent), 
-            0.025em 0.025em 0 var(--blue),
-            -0.05em -0.05em 0 var(--matrix-dark-green);
-    }
-    100% {
-        text-shadow: 
-            -0.025em 0 0 var(--accent), 
-            -0.025em -0.025em 0 var(--blue),
-            -0.025em -0.05em 0 var(--matrix-dark-green);
-    }
-}
-
-.movie-header h1:hover {
-    animation: glitch 3s infinite;
-}
-
